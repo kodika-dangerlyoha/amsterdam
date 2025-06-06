@@ -31,9 +31,17 @@
     }
     .autopark__grid {
         @include base.grid(25px, 2);
+        display: none;
+        &_active {
+            display: grid;
+        }
     }
     .equipment__grid {
         @include base.grid(34px, 2);
+        display: none;
+        &_active {
+            display: grid;
+        }
     }
     .banner__right {
         display: none;
@@ -64,6 +72,10 @@
 @media screen and (max-width: 690px) {
     .autopark__grid {
         @include base.grid(25px, 1);
+        display: none;
+        &_active {
+            display: grid;
+        }
     }
 
     .banner h2 {
@@ -118,6 +130,10 @@
     }
     .equipment__grid {
         @include base.grid(24px, 1);
+        display: none;
+        &_active {
+            display: grid;
+        }
     }
     .banner {
         padding-bottom: 10px;
