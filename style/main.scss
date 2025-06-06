@@ -191,10 +191,18 @@
             &:hover {
                 border-color: base.$clr-green;
             }
+            &._active {
+                border-color: base.$clr-green;
+                pointer-events: none;
+            }
         }
     }
     &__grid {
         @include base.grid(25px, 3);
+        display: none;
+        &_active {
+            display: grid;
+        }
     }
     &__block {
         position: relative;
@@ -326,6 +334,10 @@
     }
     &__grid {
         @include base.grid(34px, 4);
+        display: none;
+        &_active {
+            display: grid;
+        }
     }
     &__block {
         cursor: pointer;
