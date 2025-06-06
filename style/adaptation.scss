@@ -105,6 +105,21 @@
             font-size: 14px;
         }
     }
+
+    .haracter {
+        &__header {
+            padding: {
+                top: 20px;
+                bottom: 30px;
+            };
+        }
+        &__grid {
+            gap: 10px;
+            & img {
+                margin-bottom: 10px;
+            }
+        }
+    }
 }
 
 @media screen and (max-width: 476px) {
