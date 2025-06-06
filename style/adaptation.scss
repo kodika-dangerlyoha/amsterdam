@@ -1,0 +1,178 @@
+@use 'base';
+
+@media screen and (max-width: 1250px) {
+    .inner {
+        width: 950px;
+    }
+    .header > .inner {
+        width: 100%;
+    }
+    .banner__bg img{
+        width: auto;
+        height: 100%;
+    }
+}
+
+@media screen and (max-width: 1087px) {
+    .header__nav a {
+        font-size: 14px;
+    }
+}
+
+@media screen and (max-width: 1015px) {
+    .header__logo {
+        height: 70%;
+    }
+    .inner {
+        width: 750px;
+    }
+    .header > .inner {
+        width: 100%;
+    }
+    .autopark__grid {
+        @include base.grid(25px, 2);
+    }
+    .equipment__grid {
+        @include base.grid(34px, 2);
+    }
+    .banner__right {
+        display: none;
+    }
+    .banner h2 {
+        font-size: 64px;
+    }
+}
+
+@media screen and (max-width: 1087px) {
+    .header__nav {
+        // padding-right: 20px;
+        & > a {
+            display: none;
+        }
+        & > button {
+            display: flex;
+        }
+    }
+}
+
+@media screen and (max-width: 805px) {
+    .inner {
+        width: 90%;
+    }
+}
+
+@media screen and (max-width: 690px) {
+    .autopark__grid {
+        @include base.grid(25px, 1);
+    }
+
+    .banner h2 {
+        font-size: 44px;
+    }
+    .banner span {
+        font-size: 20px;
+    }
+    .banner p {
+        font-size: 14px;
+        width: 100%;
+    }
+
+    .info {
+        &__grid {
+            flex-wrap: wrap;
+            &__block {
+                width: calc(50% - 20px);
+            }
+        }
+    }
+
+    .autopark__nav {
+        margin-bottom: 30px;
+        margin-top: 15px;
+        & button{
+            font-size: 14px;
+        }
+    }
+}
+
+@media screen and (max-width: 476px) {
+    .header {
+        background-color: #242424;
+        height: 60px;
+    }
+    body {
+        background: linear-gradient(to bottom, #242424, #3B512B 23%, #3B512B 68%, #242424);
+    }
+    .autopark__nav {
+        & button{
+            font-size: 12px;
+        }
+    }
+    .equipment__grid {
+        @include base.grid(24px, 1);
+    }
+    .banner {
+        padding-bottom: 10px;
+        padding-top: 10px;
+        &__bg {
+            display: none;
+        }
+        &__left > div{
+            display: none;
+        }
+        & h2 {
+            font-size: 34px;
+        }
+        & span {
+            font-size: 18px;
+            color: base.$clr-green;
+        }
+        & p {
+            margin-top: 20px;
+        }
+    }
+    
+    .footer {
+        padding: {
+            top: 50px;
+            bottom: 50px;
+        };
+        margin-top: 50px;
+        & h3 {
+            margin-bottom: 20px;
+            font-size: 12px;
+            font-family: unbound;
+            font-weight: bold;
+        }
+        & > .inner {
+            display: flex;
+            justify-content: space-between;
+            gap: 30px;
+        }
+        &__right {
+            &__text {
+                color: #BDBDBD;
+                font-size: 12px;
+            }
+        }
+        &__points {
+            &__point {
+                display: flex;
+                align-items: start;
+                gap: 8px;
+                margin-bottom: 10px;
+                &__icon {
+                    height: 16px;
+                    padding-top: 3px;
+                    & > img {
+                        height: 100%;
+                    }
+                }
+                &__text {
+                    color: #BDBDBD;
+                    font-size: 12px;
+                }
+            }
+        }
+    }
+}
