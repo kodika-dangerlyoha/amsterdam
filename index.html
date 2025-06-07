@@ -16,11 +16,11 @@
 			</button>
 		</div>
 		<div class="burgerMenu__container">
-			<a href="#" class="txt">Автопарк</a>
-			<a href="#" class="txt">Контакты</a>
-			<a href="#" class="txt">Доп оборудование</a>
-			<a href="#" class="txt">Стоимость услуг</a>
-			<a href="#" class="txt">Оформить заказ</a>
+			<a href="#autopark" class="txt" onclick="toggle_burger_menu()">Автопарк</a>
+			<a href="#footer" class="txt" onclick="toggle_burger_menu()">Контакты</a>
+			<a href="#equipment" class="txt" onclick="toggle_burger_menu()">Доп оборудование</a>
+			<a href="#" class="txt" onclick="toggle_burger_menu()">Стоимость услуг</a>
+			<a href="#footer" class="txt" onclick="toggle_burger_menu()">Оформить заказ</a>
 		</div>
 	</div>
 	<header class="header">
@@ -29,11 +29,11 @@
 				<img src="img/logos/logo.png" alt="Петрострой Техника">
 			</div>
 			<nav class="header__nav">
-				<a href="#" class="txt">Автопарк</a>
-				<a href="#" class="txt">Контакты</a>
-				<a href="#" class="txt">Доп оборудование</a>
+				<a href="#autopark" class="txt">Автопарк</a>
+				<a href="#footer" class="txt">Контакты</a>
+				<a href="#equipment" class="txt">Доп оборудование</a>
 				<a href="#" class="txt">Стоимость услуг</a>
-				<a href="#" class="txt">Оформить заказ</a>
+				<a href="#footer" class="txt">Оформить заказ</a>
 				<button type="button" title="burg" onclick="toggle_burger_menu()">
 					<img src="img/icons/burg.svg" alt="">
 				</button>
@@ -67,7 +67,7 @@
 				<img src="img/bg/bg_top.png" alt="">
 			</div>
 		</section>
-		<section class="autopark">
+		<section class="autopark" id="autopark">
 			<h2 class="hide">Автопарк</h2>
 			<div class="inner">
 				<h2>Автопарк</h2>
@@ -438,7 +438,7 @@
 				</div>
 			</div>
 		</section>
-		<section class="equipment">
+		<section class="equipment" id="equipment">
 			<h2 class="hide">Дополнительное оборудование</h2>
 			<div class="inner">
 				<h2>Дополнительное оборудование</h2>
@@ -595,7 +595,7 @@
 			</div>
 		</section>
 	</main>
-	<footer class="footer">
+	<footer class="footer" id="footer">
 		<div class="inner">
 			<div class="footer__left">
 				<h3 class="txt">КОНТАКТЫ</h3>
