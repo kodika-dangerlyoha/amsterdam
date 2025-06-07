@@ -8,6 +8,9 @@
 	<link rel="stylesheet" href="style\style.css">
 </head>
 <body>
+	<div class="bigPicture flex-center" onclick="toggle_big_pic()">
+		<img src="img/gall/image 24.png" alt="">
+	</div>
     <div class="haracterBG">
         <div></div>
         <img src="img/bg/image 27.png" alt="">
@@ -54,10 +57,10 @@
                 </div>
                 <div class="haracter__grid">
                     <div class="haracter__grid__left">
-                        <img src="img/forHar/bob_ket_avtorsk_1x.jpg" alt="">
+                        <img class="_for_big_pic" src="img/forHar/bob_ket_avtorsk_1x.jpg" alt="" onclick="toggle_big_pic('forHar/bob_ket_avtorsk_1x.jpg')">
                     </div>
                     <div class="haracter__grid__right">
-                        <img src="img/forHar/bobcat_s300_dimensions_1x.jpg" alt="">
+                        <img class="_for_big_pic" src="img/forHar/bobcat_s300_dimensions_1x.jpg" alt="" onclick="toggle_big_pic('forHar/bobcat_s300_dimensions_1x.jpg')">
                     </div>
                 </div>
             </div>
@@ -92,6 +95,7 @@
 			</div>
 		</div>
 	</footer>
+	<script type="text/javascript" src="scripts/elements.js"></script>
 	<script type="text/javascript" src="scripts/script.js"></script>
 </body>
 </html>

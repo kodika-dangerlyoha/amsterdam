@@ -23,6 +23,9 @@
 			<a href="#footer" class="txt" onclick="toggle_burger_menu()">Оформить заказ</a>
 		</div>
 	</div>
+	<div class="bigPicture flex-center" onclick="toggle_big_pic()">
+		<img src="img/gall/image 24.png" alt="">
+	</div>
 	<header class="header">
 		<div class="inner">
 			<div class="header__logo">
@@ -546,16 +549,16 @@
 						</div>
 						<div class="carousel__player__container">
 							<div class="carousel__player__container__cart carousel__player__container__cart_active" id="gall_cart-0">
-								<img src="img/gall/image 19.png" alt="">
+								<img class="_for_big_pic" src="img/gall/image 19.png" alt="" onclick="toggle_big_pic('gall/image 19.png')">
 							</div>
 							<div class="carousel__player__container__cart" id="gall_cart-1">
-								<img src="img/gall/image 20.png" alt="">
+								<img class="_for_big_pic" src="img/gall/image 20.png" alt="" onclick="toggle_big_pic('gall/image 20.png')">
 							</div>
 							<div class="carousel__player__container__cart" id="gall_cart-2">
-								<img src="img/gall/image 21.png" alt="">
+								<img class="_for_big_pic" src="img/gall/image 21.png" alt="" onclick="toggle_big_pic('gall/image 21.png')">
 							</div>
 							<div class="carousel__player__container__cart" id="gall_cart-3">
-								<img src="img/gall/image 24.png" alt="">
+								<img class="_for_big_pic" src="img/gall/image 24.png" alt="" onclick="toggle_big_pic('gall/image 24.png')">
 							</div>
 						</div>
 						<div class="carousel__player__arrow carousel__player__arrow_right flex-center" onclick="next_cart(1)">
@@ -639,6 +642,7 @@
 			</div>
 		</div>
 	</footer>
+	<script type="text/javascript" src="scripts/elements.js"></script>
 	<script type="text/javascript" src="scripts/script.js"></script>
 	<script type="text/javascript" src="scripts/carousel.js"></script>
 </body>
