@@ -160,6 +160,7 @@
 
 @media screen and (max-width: 550px) {
     .carousel {
+        height: 500px;
         background: linear-gradient(to bottom, rgba(114, 189, 59, .7), rgba(114, 189, 59, .3));
         &__bg {
             display: none;
@@ -185,8 +186,8 @@
                 cursor: pointer;
                 border-radius: 10px;
                 &:hover {
-                    background-color: rgba(255, 255, 255, .1);
-                    box-shadow: 0 0 10px -2px rgba(0, 0, 0, .1);
+                    background-color: rgba(255, 255, 255, 0);
+                    box-shadow: 0 0 10px -2px rgba(0, 0, 0, 0);
                 }
                 &:active {
                     transform: scale(.9);
@@ -367,32 +368,6 @@
             &__bottom {
                 // height: 18px;
                 display: none;
-            }
-            &__arrow {
-                width: 35px;
-                height: 35px;
-                padding: 8px;
-                transition: .2s;
-                cursor: pointer;
-                border-radius: 10px;
-                &:hover {
-                    background-color: rgba(255, 255, 255, .1);
-                    box-shadow: 0 0 10px -2px rgba(0, 0, 0, .1);
-                }
-                &:active {
-                    transform: scale(.9);
-                }
-                & > img {
-                    width: 100%;
-                }
-                &_left {
-                    & > img {
-                        transform: rotate(180deg);
-                    }
-                }
-                &_right {
-
-                }
             }
             &__container {
                 height: 100%;
