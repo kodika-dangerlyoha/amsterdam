@@ -257,6 +257,10 @@
                 & > div {
                     display: flex;
                     align-items: start;
+                    margin-bottom: 12px;
+                    &:last-child {
+                        margin-bottom: 0px;
+                    }
                     & > ._img {
                         margin-right: 5px;
                         transform: translateY(-1px);
