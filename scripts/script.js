@@ -1,3 +1,17 @@
+window.addEventListener('scroll', function() {
+    scrollTop = window.pageYOffset;
+    if (window.innerWidth >= 480) {
+        if (scrollTop == 0) {
+            // document.querySelector('.header_main').style.backgroundColor = "rgba(114, 189, 59, 0)";
+            document.querySelector('.header_main').style.boxShadow = "0 0 30px -10px rgba(0, 0, 0, 0)";
+        }
+        else {
+            // document.querySelector('.header_main').style.backgroundColor = "rgba(114, 189, 59, 1)";
+            document.querySelector('.header_main').style.boxShadow = "0 0 30px -10px rgba(0, 0, 0, .3)";
+        }
+    }
+});
+
 const toggle_burger_menu = () => {
     if (document.querySelector('.burgerMenu_active')) {
         document.querySelector('.burgerMenu').classList.remove('burgerMenu_active');

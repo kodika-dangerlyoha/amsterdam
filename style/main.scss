@@ -173,9 +173,9 @@
     top: 0;
     right: 0;
     left: 0;
-    background-color: #72BD3B;
+    background-color: rgba(114, 189, 59, 1);
     z-index: 900;
-    box-shadow: 0 0 30px -10px rgba(0, 0, 0, .3);
+    box-shadow: 0 0 30px -10px rgba(0, 0, 0, 0.3);
     & > .inner {
         display: flex;
         justify-content: space-between;
@@ -215,6 +215,9 @@
     }
     &_haracter {
         background-color: rgb(36, 36, 36);
+    }
+    &_main {
+        box-shadow: 0 0 30px -10px rgba(0, 0, 0, 0);
     }
 }
 
