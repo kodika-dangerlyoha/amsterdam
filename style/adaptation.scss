@@ -1,5 +1,27 @@
 @use 'base';
 
+@media screen and (min-width: 2300px) {
+    .carousel__bg > img {
+        &:first-child {
+            top: -40%;
+        }
+        &:last-child {
+            bottom: -40%;
+        }
+    }
+}
+
+@media screen and (min-width: 2020px) {
+    .carousel__bg > img {
+        &:first-child {
+            top: -30%;
+        }
+        &:last-child {
+            bottom: -30%;
+        }
+    }
+}
+
 @media screen and (max-width: 1490px) {
     .carousel__bg > img {
         &:first-child {
