@@ -1,16 +1,5 @@
 @use 'base';
 
-@media screen and (min-width: 2300px) {
-    .carousel__bg > img {
-        &:first-child {
-            top: -40%;
-        }
-        &:last-child {
-            bottom: -40%;
-        }
-    }
-}
-
 @media screen and (min-width: 2020px) {
     .carousel__bg > img {
         &:first-child {
@@ -18,6 +7,28 @@
         }
         &:last-child {
             bottom: -30%;
+        }
+    }
+}
+
+@media screen and (min-width: 2300px) {
+    .carousel__bg > img {
+        &:first-child {
+            top: -35%;
+        }
+        &:last-child {
+            bottom: -35%;
+        }
+    }
+}
+
+@media screen and (min-width: 2420px) {
+    .carousel__bg > img {
+        &:first-child {
+            top: -39%;
+        }
+        &:last-child {
+            bottom: -39%;
         }
     }
 }
